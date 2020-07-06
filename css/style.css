@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+
+body{
+    background-image: linear-gradient(45deg, rgba(50,126,210, 0.5) 1%,
+    rgba(178,126,234, 0.5) 100%), linear-gradient(-45deg, #494d71 0%, rgba(118,75,162, 1) 80%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 32px;
+    width: 80px;
+    height: 80px;
+    color: #eee;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 15px;
+}
+
+.social-buttons a::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg,#226db3,#30336b);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.social-buttons a:hover::before{
+    transform: scale(0);
+}
+
+.social-buttons a i{
+    transition: 0.5s ease;
+}
+
+.social-buttons a:hover i{
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.4);
+}
+
+.social-buttons a:hover .fa-facebook{
+    background: linear-gradient(45deg,#3a73f0,#829dd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
+
+.social-buttons a:hover .fa-twitter{
+    background: linear-gradient(45deg,#08a0e9,#0084B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
+
+.social-buttons a:hover .fa-instagram{
+    background: linear-gradient(45deg,#fff722,#ff26f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
+
+.social-buttons a:hover .fa-youtube{
+    background: linear-gradient(45deg,#cc3f14,#da775e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
+
+.social-buttons a:hover .fa-linkedin-in{
+    background: linear-gradient(45deg,#0077B5, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
